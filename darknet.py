@@ -225,7 +225,7 @@ class Darknet(nn.Module):
 # print()
 # print(module_list)
 
-net = Darknet(r"C:\Users\kiit\Desktop\Deep-Learning\cfg\yolov3.cfg")
+net = Darknet(r"C:\Users\kiit\Desktop\Deep_Learning_git\Deep-Learning\cfg\yolov3.cfg")
 print(net)
 input = torch.randn(5,3,608,608)
 output = net(input, CUDA=False)
